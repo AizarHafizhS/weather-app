@@ -88,7 +88,7 @@
 .info .temperature {
   font-size: 3rem;
   font-weight: 500;
-  color: #2e60ea;
+  color: rgb(100, 136, 245);
   display: flex;
   justify-content: center;
   align-items: center;
