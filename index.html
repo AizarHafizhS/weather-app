@@ -18,10 +18,26 @@
     <script src="https://unpkg.com/feather-icons"></script>
   </head>
   <body>
-    <form action="" class="search-bar">
-      <input type="text" placeholder="Search Place" />
-      <button><i data-feather="search"></i></button>
-    </form>
+    <div class="container">
+      <!-- Search bar start -->
+      <form action="" class="search-bar">
+        <input type="text" placeholder="Search Location" />
+        <button><i data-feather="search"></i></button>
+      </form>
+      <!-- Search bar end -->
+
+      <!-- Location and temperature Section Start -->
+      <section class="info">
+        <div class="location">
+          <h3>New York</h3>
+        </div>
+        <div class="temperature">
+          <img src="assets/icons/stormy.png" alt="" />
+          <p class="temp">25&deg;C</p>
+        </div>
+      </section>
+      <!-- Location and temperature Section End -->
+    </div>
 
     <!-- Feather Icons -->
     <script>
