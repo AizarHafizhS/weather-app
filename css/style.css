@@ -98,3 +98,24 @@
 .info .temperature img {
   width: 60px;
 }
+
+/* Date and Time Section */
+.date-time {
+  padding: 1rem 4rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-blend-mode: lighten;
+  border-radius: 30px;
+  color: rgb(77, 77, 77);
+}
+
+.time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.time span {
+  font-size: 1rem;
+}
