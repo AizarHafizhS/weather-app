@@ -66,8 +66,9 @@ function fetchCurrentWeather() {
 }
 
 // Functions to create date and time
-const now = new Date(); // variable in order to use time n date method
+
 function currentDate() {
+  const now = new Date();
   const date = now.getDate();
   const dayIndex = now.getDay();
   const daysList = [
@@ -101,6 +102,7 @@ function currentDate() {
 }
 
 function getCurrentTime() {
+  const now = new Date();
   let hour = now.getHours();
   let minute = now.getMinutes();
 
@@ -113,6 +115,7 @@ function getCurrentTime() {
 }
 
 function getAmPm() {
+  const now = new Date();
   let hour = now.getHours();
   return hour >= 12 ? 'PM' : 'AM';
 }
@@ -120,5 +123,7 @@ function getAmPm() {
 // Date and time builder
 const timeSelector = document.querySelector('.time');
 const dateSelector = document.querySelector('.date');
-timeSelector.innerHTML = `${getCurrentTime()}<span>${getAmPm()}</span>`;
+setInterval(function () {
+  timeSelector.innerHTML = `${getCurrentTime()}<span>${getAmPm()}</span>`;
+}, 1000);
 dateSelector.innerHTML = currentDate();
